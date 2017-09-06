@@ -4,10 +4,10 @@ This is a template application with OTA capability, to be used with `Espressif I
 
 OTA capability is achieved with rather small binary and memory footprint.
 
-|repository                |binary size  |free memory  |
-|--------------------------|-------------|-------------|
-|espressif/esp-idf-template|423,424 bytes|248,604 bytes|
-|yanbe/esp-idf-ota-template|474,849 bytes|245,060 bytes|
+|repository                |binary size  |free memory  |flashing speed              |
+|--------------------------|-------------|-------------|----------------------------|
+|espressif/esp-idf-template|423,424 bytes|248,604 bytes|10s (via UART in 921,600bps)|
+|yanbe/esp-idf-ota-template|474,849 bytes|245,060 bytes|6s (via OTA)                |
 
 With OTA template app, your build-flashing-monitor cycle become much easier and faster.
 
