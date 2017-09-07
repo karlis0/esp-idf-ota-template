@@ -2,6 +2,8 @@
 
 This is a template application with OTA capability, to be used with `Espressif IoT Development Framework`.
 
+See also (component version): https://github.com/yanbe/esp32-ota-server
+
 OTA capability is achieved with rather small binary and memory footprint.
 
 |repository                |binary size  |free memory  |flashing speed              |
