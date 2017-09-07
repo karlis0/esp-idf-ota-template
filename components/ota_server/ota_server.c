@@ -10,6 +10,8 @@
 
 #include "ota_server.h"
 
+static const char * TAG = "OTA";
+
 /*socket*/
 static int connect_socket = 0;
 
