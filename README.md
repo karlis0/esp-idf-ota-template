@@ -30,11 +30,11 @@ $ make ota ESP32_IP=192.168.0.3
 ## What's difference from official OTA example in ESP-IDF?
 
 ESP-IDF's [OTA example project](https://github.com/espressif/esp-idf/tree/master/examples/system/ota) is a good
-start point to understand how ESP32's OTA flashing works with official OTA suppoprt components.
+starting point to understand how ESP32's OTA flashing works with official OTA suppoprt components.
 But it is _pull_ architecture. You have to launch HTTP server on your PC every time, and wait ESP32 to update their program.
 It is not optimal in terms of speed up build-flashing-monitor cycle on developing phase.
 
-My OTA template app _push_ architecture. So you can fiashing natural make command like berow.
+My OTA template app _push_ architecture. So you can flashing natural make command like berow.
 
 ```sh
 $ make ota ESP32_IP=192.168.0.3
@@ -42,9 +42,3 @@ $ make ota ESP32_IP=192.168.0.3
 
 Additionally, in esp-idf-ota-template, OTA implementation is placed into `components/ota_server`
 so you can concentrate your project without be bothered by OTA-related socket programming code.
-
-## Known issue
-
-In current (2017-09-06) ESP-IDF bootloader implementation, ESP32's bootloader start choosing
-wrong boot parttion from the reboot after third OTA flashing. It is known issue and seems to be fixed soon.
-https://github.com/espressif/esp-idf/pull/955
